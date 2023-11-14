@@ -135,7 +135,9 @@ class BookBusTicketsActivity : AppCompatActivity(), AdapterView.OnItemSelectedLi
                 intent.putExtra("Starting Point", SpinnerStartingPoint.getSelectedItem().toString());
                 intent.putExtra("Destination Point", SpinnerDestination.getSelectedItem().toString());
                 intent.putExtra("DepartTime", DepartureDaytV.text.toString());
+                intent.putExtra("ReturnTime", ReturnDaytV.text.toString());
                 intent.putExtra("Seat", SpinnerSeat.getSelectedItem().toString());
+                intent.putExtra("RoundTrip", RoundTripCheckBox.isChecked());
                 val LAUNCH_SECOND_ACTIVITY:Int = 1
                 startActivityForResult(intent, LAUNCH_SECOND_ACTIVITY)
             }

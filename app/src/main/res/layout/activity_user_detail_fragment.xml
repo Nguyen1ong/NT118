@@ -290,13 +290,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/eTAddress" />
 
             <TextView
-                android:id="@+id/tVNote_Email"
+                android:id="@+id/tVChangePw"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="Note: Đây là địa chỉ email dùng để đăng nhập và nhận các thông báo"
+                android:text="Thay đổi mật khẩu"
                 android:textColor="@color/white"
                 app:layout_constraintRight_toRightOf="@+id/PersonalData"
                 app:layout_constraintStart_toStartOf="@+id/PersonalData"

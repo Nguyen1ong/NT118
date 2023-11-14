@@ -43,7 +43,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.home -> replaceFragment(HomeFragment())
                 R.id.search -> replaceFragment(SearchFragment())
                 R.id.bill -> replaceFragment(BillFragment())
-                R.id.user -> replaceFragment(UserFragment())
+                R.id.user -> {
+                    val bundle = Bundle()
+                    bundle.putString("Pw", intent.getStringExtra("Pw").toString())
+                    val fragobj = UserFragment()
+                    fragobj.setArguments(bundle)
+                    replaceFragment(fragobj)}
                 else ->{
                 }
             }

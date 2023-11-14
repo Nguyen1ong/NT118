@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_username"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_username"
+        android:backgroundTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tVName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tVMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:textColor="#EB3911"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tVNumberOfSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="TextView"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tVName" />
+        <TextView
+            android:id="@+id/tVDepartureTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="TextView"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tVNumberOfSeat" />
+        <TextView
+            android:id="@+id/tVTravelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="TextView"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tVDepartureTime" />
+        <TextView
+            android:id="@+id/tVArrivalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="TextView"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tVTravelTime" />
+
+        <ImageView
+            android:id="@+id/iVDepartureTime"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tVNumberOfSeat"
+            android:background="@drawable/ic_circumference"
+            android:layout_toRightOf="@+id/tVDepartureTime"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/iVDepartureTime"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toRightOf="@+id/tVDepartureTime"
+            android:layout_marginLeft="110dp"
+            android:background="@color/main_blue" />
+
+        <TextView
+            android:id="@+id/tVDeparturePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tVNumberOfSeat"
+            android:layout_toRightOf="@+id/iVDepartureTime"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:id="@+id/iVArrivalTime"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tVTravelTime"
+            android:layout_toRightOf="@+id/tVDepartureTime"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/ic_record"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/tVArrivalPoint"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVTravelTime"
+            android:layout_toRightOf="@+id/iVArrivalTime"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

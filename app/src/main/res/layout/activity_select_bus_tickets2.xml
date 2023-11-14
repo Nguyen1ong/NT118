@@ -55,7 +55,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginLeft="45dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/ic_cal_in" />
+                    android:background="@drawable/ic_cal_out" />
 
                 <TextView
                     android:id="@+id/DepartureDaySpinner"

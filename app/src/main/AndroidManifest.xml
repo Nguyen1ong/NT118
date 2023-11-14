@@ -13,7 +13,28 @@
         android:theme="@style/Theme.NT118_Project"
         tools:targetApi="31">
         <activity
+            android:name=".Fragments.SelectBusTickets_2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Fragments.PayActivity"
+            android:exported="false" />
+        <activity
             android:name=".Fragments.ChangePasswordActivity"
+            android:exported="false" />
+        <activity          
+            android:name=".hotel.ListofRoomsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hotel.ListofHotelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hotel.SearchHotelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".flight.ListofFlightsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".flight.SearchFlightActivity"
             android:exported="false" />
         <activity
             android:name=".Fragments.SelectBusTicketsActivity"
@@ -29,18 +50,18 @@
             android:exported="false" />
         <activity
             android:name=".Fragments.LoginFragment"
-            android:exported="true">
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NT118_Project.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.NT118_Project.NoActionBar" />
     </application>
 
 </manifest>
